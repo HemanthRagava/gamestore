@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+    
+    }
+
+    header {
+      background-color: aqua;
+       background-position: center;
+       background-size:150px;
+       color: #fff;
+       padding: 20px;
+       text-align: center;
+    }
+
+input{
+  border-radius: 20px;
+   width: 300px;
+}
+    input[type="text"] {
+      padding: 10px;
+      
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .flash-sale {
+      position:absolute;
+      top: 50px;
+      right: 20px;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
+
+    .flash-sale2 {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      background-color: #ff0000;
+      color: #fff;
+      padding: 5px 10px;
+      font-weight: bold;
+      animation: flash 1s infinite;
+    }
+
+    @keyframes flash {
+      0% { background-color: #ff0000; }
+      50% { background-color: #ffcc00; }
+      100% { background-color: #ff0000; }
+    }
+
+    .flash-sale2:hover {
+      animation: none;
+      background-color: #ffcc00;
+    }
+
+    .game-list {
+      list-style: none;
+      display: grid;
+      justify-content: center;
+      gap: 20px;
+      grid-template-columns: 350px 350px 350px 350px;
+    }
+    .game{
+      border: 1px solid;
+      transition: transform 0.3s ease;
+      display: grid;
+      
+    }
+    #game:hover {
+      transform: rotate(1deg);
+    }
+    .gamee{
+      border: 1px solid;
+      /* margin: 10px; */
+      padding: 10px;
+    }
+
+    /* .game {
+      border: 1px solid #ddd;
+      padding: 20px;
+      background-color: #ffffff;
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    } */
+
+    .gamee{
+      border: 1px solid #ddd;
+      padding: 20px;
+      background: linear-gradient(rgb(218, 26, 26),rgb(35, 73, 179));
+      transition: transform 0.3s ease;
+      /* margin-bottom: 20px; */
+    } */
+    
+    /* .game1{
+      border: 1px solid #ddd;
+      padding: 20px;
+      background: linear-gradient(rgb(0, 140, 255),rgb(255, 102, 0));
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .game2{
+      border: 1px solid #ddd;
+      padding: 20px;
+      background: linear-gradient(rgb(6, 18, 27),rgb(131, 66, 23));
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    } */ 
+
+    /* #game:hover {
+      transform: rotate(1deg);
+    }
+
+    .game img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .game-info {
+      text-align: center;
+    }
+
+    .game-info h2 {
+      margin: 0;
+    }
+
+    .game-info p {
+      margin: 5px 0;
+    }
+    h1{
+      color: #bb1c1c;
+    } */
+    /* .border{
+    border: 1px solid;
+    } */
+  </style>
+</head>
+<body>
+                                                        
+  <header>
+    <h1>STEAM GAMING STORE</h1>
+    <input type="text" id="search" placeholder="Search...">
+  </header>
+
+  <div class="w3-bar w3-black w3-hide-small">
+    <a href="https://www.facebook.com/login/" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/accounts/login/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.snapchat.com/" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+    <a href="https://www.flickr.com/" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+    <a href="https://twitter.com/?lang=en" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  </div>
+
+  <div class="flash-sale">Buy 2 Get 1 Free</div>
+  <div class="flash-sale2">FLASH SALE</div>
+
+  <main>
+    <ul class="game-list">
+      <li class="game" id="game">
+        <div class="gamee">
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAMOK3cjH0oK89AraaQ_DJQ3EyioLRJxCnq0X2lLPXDisjyn1XOuwGkRLht5b1c7d7G6Uk2w"  alt="Game 1"  width="300">
+        <div class="game-info">
+          <h2>MORTAL KOMBAT 1</h2>
+          <p>Price: $50</p>
+          <p>Release Date: January 01, 2024</p>
+          <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+          <a href="paymentpage.html">click here to buy</a>
+        </div>
+        </div>
+      </li>
+
+      <li class="game" id="game">
+        <div class="gamee">
+          <img src="https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"  alt="Game 2"  width="300">
+          <div class="game-info">
+            <h2>VALORANT</h2>
+            <p>Price: FREE</p>
+            <p>Release Date: january 23, 2020</p>
+            <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+            <a href="paymentpage.html">click here to buy</a>
+            </div>
+        </div>
+      </li>
+
+      <li class="game" id="game">
+        <div class="gamee">
+          <img src="https://w0.peakpx.com/wallpaper/1012/796/HD-wallpaper-rocket-league-logo-vans-air-star-wall-water-logos-wars-shoes-sith.jpg"  alt="Game 3"  width="300">
+          <div class="game-info">
+            <h2>ROCKET LEAGUE</h2>
+            <p>Price: $39</p>
+            <p>Release Date: may 29, 2016</p>
+            <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+            <a href="paymentpage.html">click here to buy</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="game" id="game">
+        <div class="gamee">
+          <img src="https://www.monsterhunter.com/wp-content/uploads/sites/3/2023/06/wallpaper_rise-sunbreak11_1_gl.jpg"  alt="Game 4"  width="300">
+          <div class="game-info">
+            <h2>MONSTER HUNTER</h2>
+            <p>Price: $68</p>
+            <p>Release Date: March 16, 2021</p>
+            <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+            <a href="paymentpage.html">click here to buy</a>
+          </div>
+        </div>
+      </li>
+</ul>
+
+<ul class="game-list">
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://howlongtobeat.com/games/40715_Sniper_Elite_4.jpg?width=760"  alt="Game 5"  width="300">
+    <div class="game-info">
+      <h2>SNIPER ELITE IV</h2>
+      <p>Price: $50</p>
+      <p>Release Date: January 21, 2023</p>
+      <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+      <a href="paymentpage.html">click here to buy</a>
+    </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://m.media-amazon.com/images/I/81bbAeAG6vS._AC_UF1000,1000_QL80_.jpg"  alt="Game 6"  width="300">
+      <div class="game-info">
+        <h2>RED DEAD REDEMPTION</h2>
+        <p>Price: $649</p>
+        <p>Release Date: january 23, 2020</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+        </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB9q005AGa1Jmun-mnzCPWCZyyrgVCttN8OQeueUPQYA&s"  alt="Game 7"  width="300">
+      <div class="game-info">
+        <h2>WATCH DOGS 2</h2>
+        <p>Price: $139</p>
+        <p>Release Date: may 28, 2018</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg"  alt="Game 8"  width="300">
+      <div class="game-info">
+        <h2>DARK SOULS</h2>
+        <p>Price: $68</p>
+        <p>Release Date: APRIL 16, 2011</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<ul class="game-list">
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/220px-Witcher_3_cover_art.jpg"  alt="Game 9"  width="300">
+    <div class="game-info">
+      <h2>WITCHER III</h2>
+      <p>Price: $100</p>
+      <p>Release Date: SEPTEMBER 29, 2024</p>
+      <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+      <a href="paymentpage.html">click here to buy</a>
+    </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/6bAF2VVEamgKclalI0oBnoAe.jpg"  alt="Game 10"  width="300">
+      <div class="game-info">
+        <h2>CYBERPUNK 2077</h2>
+        <p>Price: FREE</p>
+        <p>Release Date: january 23, 2020</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+        </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://rukminim2.flixcart.com/image/850/1000/av-media/games/z/u/u/max-payne-3-original-imae7ec9u36ugzrt.jpeg?q=20&crop=false"  alt="Game 11"  width="300">
+      <div class="game-info">
+        <h2>MAX PAYNE</h2>
+        <p>Price: $217</p>
+        <p>Release Date: march 21, 2022</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://m.media-amazon.com/images/M/MV5BMTUyMzMzMTU0MF5BMl5BanBnXkFtZTcwNDM3MTcxMw@@._V1_.jpg"  alt="Game 12"  width="300">
+      <div class="game-info">
+        <h2>BAT MAN</h2>
+        <p>Price: $217</p>
+        <p>Release Date: march 21, 2022</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<ul class="game-list">
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://www.hdwallpapers.in/download/spider_man_2018_4k_ps4_game-480x800.jpg"  alt="Game 13"  width="300">
+      <div class="game-info">
+        <h2>SPIDER MAN</h2>
+        <p>Price: $217</p>
+        <p>Release Date: march 21, 2022</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+    </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhlglWtxRa0FYv8FCNfC6PJVx73C0IFAVlByA6Rv9z3Q&s"  alt="Game 14"  width="300">
+      <div class="game-info">
+        <h2>GTA VI</h2>
+        <p>Price: $412</p>
+        <p>Release Date: august 17, 2026</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+        </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhP6grFrbKhUkgIGtz_8LEgfRc75GDxg_x7MeDqZJZCg&s"  alt="Game 15"  width="300">
+                                <div class="game-info">
+                                  <h2>GOD OF WAR</h2>
+                                  <p>Price: $317</p>
+                                  <p>Release Date: march 11, 2021</p>
+                                  <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+                                  <a href="paymentpage.html">click here to buy</a>
+                                </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://lh5.googleusercontent.com/proxy/k5b2hA0l0nmm4I7C2_gXNGl8uN5ojutmVsqpaG_besam6_SA04gyzcxAsSqSpwCXANobFtuzkXp_V7Q9mNbKdZnsyOt6"  alt="Game 16"  width="300">
+                        <div class="game-info">
+                          <h2>RESIDENT EVIL 7</h2>
+                          <p>Price: $246</p>
+                          <p>Release Date: november 09, 1998</p>
+                          <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+                          <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<ul class="game-list">
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg"  alt="Game 17"  width="300">
+      <div class="game-info">
+        <h2>GHOST OF TUSHIMA</h2>
+        <p>Price: $299</p>
+        <p>Release Date: september 13, 2022</p>
+        <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+        <a href="paymentpage.html">click here to buy</a>
+      </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://img.redbull.com/images/c_crop,x_320,y_0,h_900,w_720/c_fill,w_450,h_600/q_auto:low,f_auto/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg"  alt="Game 18"  width="300">
+            <div class="game-info">
+              <h2>TEKKEN 7</h2>
+              <p>Price: $199</p>
+              <p>Release Date: january 23, 2024</p>
+              <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+              <a href="paymentpage.html">click here to buy</a>
+            </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://cdn1.epicgames.com/6bff1c13a8884b518bd44acaf691ddba/offer/MudRunner_ValleyDLC-EpicGames_PortraitImage-860x1148-860x1148-35d705d29353772410db9708873ba1c4.jpg"  alt="Game 19"  width="300">
+                    <div class="game-info">
+                      <h2>MUD RUNNER VALLEY</h2>
+                      <p>Price: $123</p>
+                      <p>Release Date: october 14, 1998</p>
+                      <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+                      <a href="paymentpage.html">click here to buy</a>
+                    </div>
+    </div>
+  </li>
+
+  <li class="game" id="game">
+    <div class="gamee">
+      <img src="https://m.media-amazon.com/images/I/81L8-mjNlrL.jpg"  alt="Game 20"  width="300">
+                                <div class="game-info">
+                                  <h2>CS GO GLOBAL</h2>
+                                  <p>Price: $217</p>
+                                  <p>Release Date: march 21, 2022</p>
+                                  <p>Compatible Devices: PC, PS5, Xbox Series X</p>
+                                  <a href="paymentpage.html">click here to buy</a>
+                                </div>
+    </div>
+  </li>
+</ul>
+  </main>
+</body>
+</html>
